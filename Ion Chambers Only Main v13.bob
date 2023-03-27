@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Ion Chambers BioXAS-Main</name>
+  <macros>
+    <cph1>loc://cph1</cph1>
+    <cph2>loc://cph2</cph2>
+    <cph3>loc://cph3</cph3>
+    <cph4>loc://cph4</cph4>
+  </macros>
+  <width>360</width>
+  <height>500</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <width>278</width>
+    <height>120</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>increase/decrease ampliffier sensitivity</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V1</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs16:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <y>5</y>
+    <width>170</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="52.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>V</text>
+    <x>180</x>
+    <y>30</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 1</name>
+    <pv_name>A1607-701:sens_num</pv_name>
+    <x>190</x>
+    <y>5</y>
+    <width>40</width>
+    <height>30</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units 1</name>
+    <pv_name>A1607-701:sens_unit</pv_name>
+    <x>230</x>
+    <y>5</y>
+    <width>35</width>
+    <height>30</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Num IC1</name>
+    <pv_name>A1607-701:offset_num</pv_name>
+    <x>124</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <font>
+      <font family="DejaVu Math TeX Gyre" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Unit IC1</name>
+    <pv_name>A1607-701:offset_unit</pv_name>
+    <x>134</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain up 1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-701:gainDecrease</pv_name>
+    <text>Gain +</text>
+    <x>278</x>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain down 1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-701:gainIncrease</pv_name>
+    <text>Gain -</text>
+    <x>278</x>
+    <y>80</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_10</name>
+    <actions>
+      <action type="execute">
+        <script file="EmbeddedPy">
+          <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+import time
+PVUtil.writePV('TRG1607-701:SYS_RESET.PROC', 1)
+dwellTime = float(display.getWidget("Dwell_time").getPropertyValue("text")) * 0.001
+PVUtil.writePV('TRG1607-701:PULSE1_PRE', "s")
+PVUtil.writePV('TRG1607-701:PULSE1_WID', dwellTime)
+PVUtil.writePV('TRG1607-701:PULSE3_WID', dwellTime)
+time.sleep(1.)
+PVUtil.writePV('TRG1607-701:SOFT_IN:B0', 1)]]></text>
+        </script>
+      </action>
+    </actions>
+    <pv_name>TRG1607-701:SOFT_IN:B0</pv_name>
+    <text>Kick Zebra</text>
+    <x>487</x>
+    <y>44</y>
+    <width>115</width>
+    <height>46</height>
+    <visible>false</visible>
+    <font>
+      <font family="Noto Sans" style="BOLD" size="11.881188118811881">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <enabled>false</enabled>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Zebra Kicker</name>
+    <pv_name>TRG1607-701:SYS_STATERR.B0</pv_name>
+    <x>12</x>
+    <y>480</y>
+    <width>42</width>
+    <visible>false</visible>
+    <off_color>
+      <color red="0" green="100" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <square>true</square>
+    <actions>
+    </actions>
+    <scripts>
+      <script file="EmbeddedPy">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+import time
+if PVUtil.getLong(pvs[0])>0:
+	PVUtil.writePV('TRG1607-701:SYS_RESET.PROC', 1)
+	dwellTime = float(ScriptUtil.findWidgetByName(widget, "Dwell_time").getPropertyValue("pv_value").value) * 0.001
+	PVUtil.writePV('TRG1607-701:PULSE1_PRE', "s")
+	PVUtil.writePV('TRG1607-701:PULSE1_WID', dwellTime)
+	PVUtil.writePV('TRG1607-701:PULSE3_WID', dwellTime)
+	time.sleep(1.)
+	PVUtil.writePV('TRG1607-701:SOFT_IN:B0', 1)]]></text>
+        <pv_name>TRG1607-701:SYS_STATERR</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Dwell_time</name>
+    <pv_name>MCS1607-701:mcs:delay</pv_name>
+    <x>94</x>
+    <y>480</y>
+    <width>30</width>
+    <height>14</height>
+    <visible>false</visible>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="171" blue="248">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Main Energy</name>
+    <pv_name>BL1607-I21:Mono:Energy:EV:fbk</pv_name>
+    <x>66</x>
+    <y>480</y>
+    <width>28</width>
+    <height>10</height>
+    <visible>false</visible>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>IC0</name>
+    <text>0</text>
+    <x>20</x>
+    <y>65</y>
+    <width>180</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="28.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <scripts>
+      <script file="EmbeddedPy" check_connections="false">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+from org.csstudio.display.builder.runtime.script import ScriptUtil
+
+def getGainOrder(unitStr):
+	if unitStr == "m":
+		gainOrder = 1e-3
+	elif unitStr == "u":
+		gainOrder = 1e-6
+	elif unitStr == "n":
+		gainOrder = 1e-9
+	elif unitStr == "p":
+		gainOrder = 1e-12
+	else:
+		gainOrder = 0
+	return gainOrder
+
+cph = PVUtil.getDouble(pvs[0])
+
+if cph:
+	energy = 1
+	energy = float(ScriptUtil.findWidgetByName(widget, "Main Energy").getPropertyValue("pv_value").value)
+	voltage = float(ScriptUtil.findWidgetByName(widget, "V1").getPropertyValue("pv_value").value)
+	gainNum = float(ScriptUtil.findWidgetByName(widget, "Gain Value 1").getPropertyValue("pv_value").value)
+	gainOrderStr = (ScriptUtil.findWidgetByName(widget, "Gain Units 1").getPropertyValue("pv_value").value)[0]
+	offsetNum = float(ScriptUtil.findWidgetByName(widget, "Offset Num IC1").getPropertyValue("pv_value").value)
+	offsetUnitStr = (ScriptUtil.findWidgetByName(widget, "Offset Unit IC1").getPropertyValue("pv_value").value)[0]
+
+	offsetGain = float(offsetNum) * getGainOrder(offsetUnitStr)
+	dwellTime = float(ScriptUtil.findWidgetByName(widget, "Dwell_time").getPropertyValue("pv_value").value) * 0.001
+
+	pC = [-7.42691780e+02, 3.88267580e-12, -4.54111903e-03, 6.60645566e+10]
+
+	gain = float(gainNum) * getGainOrder(gainOrderStr)
+	eFrac = energy * (pC[1]*(energy-pC[0])**2 + pC[3]*(energy-pC[0])**(-3) + pC[2])
+	flux = 0
+	current = voltage*gain - offsetGain
+	if eFrac > 0 and current  > 0 and voltage>0.015:
+		flux = current * 36 / (1.6e-19 * eFrac)
+	widget.setPropertyValue("text", "{:.2e}".format(flux))
+else:
+	flux = PVUtil.getDouble(pvs[1])
+	widget.setPropertyValue("text", "{:.0f}".format(flux))]]></text>
+        <pv_name>loc://cph1</pv_name>
+        <pv_name>MCS1607-701:mcs16:fbk</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_1</name>
+    <pv_name>loc://cph1</pv_name>
+    <x>206</x>
+    <y>76</y>
+    <width>70</width>
+    <height>36</height>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <selected_color>
+      <color name="Header_Background" red="77" green="77" blue="77">
+      </color>
+    </selected_color>
+    <horizontal>false</horizontal>
+    <items>
+      <item>counts</item>
+      <item>photons/s</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>IC 0</text>
+    <x>216</x>
+    <y>35</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <y>125</y>
+    <width>278</width>
+    <height>120</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>increase/decrease ampliffier sensitivity</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V2</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs17:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <y>130</y>
+    <width>170</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="52.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>V</text>
+    <x>180</x>
+    <y>155</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 2</name>
+    <pv_name>A1607-702:sens_num</pv_name>
+    <x>190</x>
+    <y>130</y>
+    <width>40</width>
+    <height>30</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units 2</name>
+    <pv_name>A1607-702:sens_unit</pv_name>
+    <x>230</x>
+    <y>130</y>
+    <width>35</width>
+    <height>30</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>IC1</name>
+    <text>0</text>
+    <x>20</x>
+    <y>190</y>
+    <width>180</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="28.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <scripts>
+      <script file="EmbeddedPy" check_connections="false">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+from org.csstudio.display.builder.runtime.script import ScriptUtil
+
+def getGainOrder(unitStr):
+	if unitStr == "m":
+		gainOrder = 1e-3
+	elif unitStr == "u":
+		gainOrder = 1e-6
+	elif unitStr == "n":
+		gainOrder = 1e-9
+	elif unitStr == "p":
+		gainOrder = 1e-12
+	else:
+		gainOrder = 0
+	return gainOrder
+
+cph = PVUtil.getDouble(pvs[0])
+
+if cph:
+	energy = 1
+	energy = float(ScriptUtil.findWidgetByName(widget, "Main Energy").getPropertyValue("pv_value").value)
+	voltage = float(ScriptUtil.findWidgetByName(widget, "V2").getPropertyValue("pv_value").value)
+	gainNum = float(ScriptUtil.findWidgetByName(widget, "Gain Value 2").getPropertyValue("pv_value").value)
+	gainOrderStr = (ScriptUtil.findWidgetByName(widget, "Gain Units 2").getPropertyValue("pv_value").value)[0]
+	offsetNum = float(ScriptUtil.findWidgetByName(widget, "Offset Num IC2").getPropertyValue("pv_value").value)
+	offsetUnitStr = (ScriptUtil.findWidgetByName(widget, "Offset Unit IC2").getPropertyValue("pv_value").value)[0]
+
+	offsetGain = float(offsetNum) * getGainOrder(offsetUnitStr)
+	dwellTime = float(ScriptUtil.findWidgetByName(widget, "Dwell_time").getPropertyValue("pv_value").value) * 0.001
+
+	pC = [-7.42691780e+02, 3.88267580e-12, -4.54111903e-03, 6.60645566e+10]
+
+	gain = float(gainNum) * getGainOrder(gainOrderStr)
+	eFrac = energy * (pC[1]*(energy-pC[0])**2 + pC[3]*(energy-pC[0])**(-3) + pC[2])
+	flux = 0
+	current = voltage*gain - offsetGain
+	if eFrac > 0 and current  > 0 and voltage>0.015:
+		flux = current * 36 / (1.6e-19 * eFrac)
+	widget.setPropertyValue("text", "{:.2e}".format(flux))
+else:
+	flux = PVUtil.getDouble(pvs[1])
+	widget.setPropertyValue("text", "{:.0f}".format(flux))]]></text>
+        <pv_name>loc://cph2</pv_name>
+        <pv_name>MCS1607-701:mcs17:fbk</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_3</name>
+    <pv_name>loc://cph2</pv_name>
+    <x>206</x>
+    <y>201</y>
+    <width>70</width>
+    <height>36</height>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <selected_color>
+      <color name="Header_Background" red="77" green="77" blue="77">
+      </color>
+    </selected_color>
+    <horizontal>false</horizontal>
+    <items>
+      <item>counts</item>
+      <item>photons/s</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>IC 1</text>
+    <x>216</x>
+    <y>160</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <y>250</y>
+    <width>278</width>
+    <height>120</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>increase/decrease ampliffier sensitivity</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V3</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs18:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <y>255</y>
+    <width>170</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="52.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>V</text>
+    <x>180</x>
+    <y>280</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 3</name>
+    <pv_name>A1607-703:sens_num</pv_name>
+    <x>190</x>
+    <y>255</y>
+    <width>40</width>
+    <height>30</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units 3</name>
+    <pv_name>A1607-703:sens_unit</pv_name>
+    <x>230</x>
+    <y>255</y>
+    <width>35</width>
+    <height>30</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>IC2</name>
+    <text>0</text>
+    <x>20</x>
+    <y>315</y>
+    <width>180</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="28.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <scripts>
+      <script file="EmbeddedPy" check_connections="false">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+from org.csstudio.display.builder.runtime.script import ScriptUtil
+
+def getGainOrder(unitStr):
+	if unitStr == "m":
+		gainOrder = 1e-3
+	elif unitStr == "u":
+		gainOrder = 1e-6
+	elif unitStr == "n":
+		gainOrder = 1e-9
+	elif unitStr == "p":
+		gainOrder = 1e-12
+	else:
+		gainOrder = 0
+	return gainOrder
+
+cph = PVUtil.getDouble(pvs[0])
+
+if cph:
+	energy = 1
+	energy = float(ScriptUtil.findWidgetByName(widget, "Main Energy").getPropertyValue("pv_value").value)
+	voltage = float(ScriptUtil.findWidgetByName(widget, "V3").getPropertyValue("pv_value").value)
+	gainNum = float(ScriptUtil.findWidgetByName(widget, "Gain Value 3").getPropertyValue("pv_value").value)
+	gainOrderStr = (ScriptUtil.findWidgetByName(widget, "Gain Units 3").getPropertyValue("pv_value").value)[0]
+	offsetNum = float(ScriptUtil.findWidgetByName(widget, "Offset Num IC3").getPropertyValue("pv_value").value)
+	offsetUnitStr = (ScriptUtil.findWidgetByName(widget, "Offset Unit IC3").getPropertyValue("pv_value").value)[0]
+
+	offsetGain = float(offsetNum) * getGainOrder(offsetUnitStr)
+	dwellTime = float(ScriptUtil.findWidgetByName(widget, "Dwell_time").getPropertyValue("pv_value").value) * 0.001
+
+	pC = [-7.42691780e+02, 3.88267580e-12, -4.54111903e-03, 6.60645566e+10]
+
+	gain = float(gainNum) * getGainOrder(gainOrderStr)
+	eFrac = energy * (pC[1]*(energy-pC[0])**2 + pC[3]*(energy-pC[0])**(-3) + pC[2])
+	flux = 0
+	current = voltage*gain - offsetGain
+	if eFrac > 0 and current  > 0 and voltage>0.015:
+		flux = current * 36 / (1.6e-19 * eFrac)
+	widget.setPropertyValue("text", "{:.2e}".format(flux))
+else:
+	flux = PVUtil.getDouble(pvs[1])
+	widget.setPropertyValue("text", "{:.0f}".format(flux))]]></text>
+        <pv_name>loc://cph3</pv_name>
+        <pv_name>MCS1607-701:mcs18:fbk</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_4</name>
+    <pv_name>loc://cph3</pv_name>
+    <x>206</x>
+    <y>326</y>
+    <width>70</width>
+    <height>36</height>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <selected_color>
+      <color name="Header_Background" red="77" green="77" blue="77">
+      </color>
+    </selected_color>
+    <horizontal>false</horizontal>
+    <items>
+      <item>counts</item>
+      <item>photons/s</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>IC 2</text>
+    <x>216</x>
+    <y>285</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_4</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <y>375</y>
+    <width>278</width>
+    <height>120</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>increase/decrease ampliffier sensitivity</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V4</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs19:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <y>380</y>
+    <width>170</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="52.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>V</text>
+    <x>180</x>
+    <y>405</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 4</name>
+    <pv_name>A1607-704:sens_num</pv_name>
+    <x>190</x>
+    <y>380</y>
+    <width>40</width>
+    <height>30</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units 4</name>
+    <pv_name>A1607-704:sens_unit</pv_name>
+    <x>230</x>
+    <y>380</y>
+    <width>35</width>
+    <height>30</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>IC3</name>
+    <text>0</text>
+    <x>20</x>
+    <y>440</y>
+    <width>180</width>
+    <height>60</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="28.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <scripts>
+      <script file="EmbeddedPy" check_connections="false">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+from org.csstudio.display.builder.runtime.script import ScriptUtil
+
+def getGainOrder(unitStr):
+	if unitStr == "m":
+		gainOrder = 1e-3
+	elif unitStr == "u":
+		gainOrder = 1e-6
+	elif unitStr == "n":
+		gainOrder = 1e-9
+	elif unitStr == "p":
+		gainOrder = 1e-12
+	else:
+		gainOrder = 0
+	return gainOrder
+
+cph = PVUtil.getDouble(pvs[0])
+
+if False:
+	energy = 1
+	energy = float(ScriptUtil.findWidgetByName(widget, "Main Energy").getPropertyValue("pv_value").value)
+	voltage = float(ScriptUtil.findWidgetByName(widget, "V4").getPropertyValue("pv_value").value)
+	gainNum = float(ScriptUtil.findWidgetByName(widget, "Gain Value 4").getPropertyValue("pv_value").value)
+	gainOrderStr = (ScriptUtil.findWidgetByName(widget, "Gain Units 4").getPropertyValue("pv_value").value)[0]
+	offsetNum = float(ScriptUtil.findWidgetByName(widget, "Offset Num IC4").getPropertyValue("pv_value").value)
+	offsetUnitStr = (ScriptUtil.findWidgetByName(widget, "Offset Unit IC4").getPropertyValue("pv_value").value)[0]
+
+	offsetGain = float(offsetNum) * getGainOrder(offsetUnitStr)
+	dwellTime = float(ScriptUtil.findWidgetByName(widget, "Dwell_time").getPropertyValue("pv_value").value) * 0.001
+
+	pC = [-7.42691780e+02, 3.88267580e-12, -4.54111903e-03, 6.60645566e+10]
+
+	gain = float(gainNum) * getGainOrder(gainOrderStr)
+	eFrac = energy * (pC[1]*(energy-pC[0])**2 + pC[3]*(energy-pC[0])**(-3) + pC[2])
+	flux = 0
+	current = voltage*gain - offsetGain
+	if eFrac > 0 and current  > 0 and voltage>0.015:
+		flux = current * 36 / (1.6e-19 * eFrac)
+	widget.setPropertyValue("text", "{:.2e}".format(flux))
+else:
+	flux = PVUtil.getDouble(pvs[1])
+	widget.setPropertyValue("text", "{:.0f}".format(flux))]]></text>
+        <pv_name trigger="false">loc://cph4</pv_name>
+        <pv_name>MCS1607-701:mcs19:fbk</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_5</name>
+    <pv_name>loc://cph4</pv_name>
+    <x>206</x>
+    <y>451</y>
+    <width>70</width>
+    <height>36</height>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <selected_color>
+      <color name="Header_Background" red="77" green="77" blue="77">
+      </color>
+    </selected_color>
+    <horizontal>false</horizontal>
+    <items>
+      <item>counts</item>
+      <item></item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>PIPS</text>
+    <x>216</x>
+    <y>410</y>
+    <width>60</width>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Num IC2</name>
+    <pv_name>A1607-702:offset_num</pv_name>
+    <x>166</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <font>
+      <font family="DejaVu Math TeX Gyre" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Unit IC2</name>
+    <pv_name>A1607-702:offset_unit</pv_name>
+    <x>176</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Num IC3</name>
+    <pv_name>A1607-703:offset_num</pv_name>
+    <x>206</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <font>
+      <font family="DejaVu Math TeX Gyre" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Unit IC3</name>
+    <pv_name>A1607-703:offset_unit</pv_name>
+    <x>216</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Num IC4</name>
+    <pv_name>A1607-704:offset_num</pv_name>
+    <x>236</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <font>
+      <font family="DejaVu Math TeX Gyre" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Unit IC4</name>
+    <pv_name>A1607-704:offset_unit</pv_name>
+    <x>246</x>
+    <y>480</y>
+    <width>10</width>
+    <height>10</height>
+    <visible>false</visible>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain auto 1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <text>Auto</text>
+    <x>278</x>
+    <y>40</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain up 2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-702:gainDecrease</pv_name>
+    <text>Gain +</text>
+    <x>278</x>
+    <y>125</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain auto 2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <text>Auto</text>
+    <x>278</x>
+    <y>165</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain down 2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-702:gainIncrease</pv_name>
+    <text>Gain -</text>
+    <x>278</x>
+    <y>205</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain up 3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-703:gainDecrease</pv_name>
+    <text>Gain +</text>
+    <x>278</x>
+    <y>250</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain auto 3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <text>Auto</text>
+    <x>278</x>
+    <y>290</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain down 3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-703:gainIncrease</pv_name>
+    <text>Gain -</text>
+    <x>278</x>
+    <y>330</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain up 4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-704:gainDecrease</pv_name>
+    <text>Gain +</text>
+    <x>278</x>
+    <y>375</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain auto 4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <text>Auto</text>
+    <x>278</x>
+    <y>415</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Gain down 4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-704:gainIncrease</pv_name>
+    <text>Gain -</text>
+    <x>278</x>
+    <y>455</y>
+    <width>72</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

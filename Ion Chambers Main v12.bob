@@ -1,0 +1,2175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Ion Chambers BioXAS-Main</name>
+  <width>600</width>
+  <height>500</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_4</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <y>5</y>
+    <width>253</width>
+    <height>306</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <x>256</x>
+    <y>245</y>
+    <width>319</width>
+    <height>115</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <x>256</x>
+    <y>125</y>
+    <width>320</width>
+    <height>115</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <x>256</x>
+    <y>5</y>
+    <width>320</width>
+    <height>115</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>increase/decrease ampliffier sensitivity</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Dwell_time</name>
+    <pv_name>MCS1607-701:mcs:delay</pv_name>
+    <x>11</x>
+    <y>407</y>
+    <width>199</width>
+    <height>42</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="171" blue="248">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>IO0</name>
+    <pv_name>MCS1607-701:mcs16:fbk</pv_name>
+    <x>260</x>
+    <y>66</y>
+    <width>200</width>
+    <height>56</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="25.742574257425744">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V1</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs16:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <x>256</x>
+    <y>6</y>
+    <width>219</width>
+    <height>62</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="48.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>cts</text>
+    <x>466</x>
+    <y>95</y>
+    <width>17</width>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>V</text>
+    <x>412</x>
+    <y>37</y>
+    <width>27</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>IO0_1</name>
+    <pv_name>MCS1607-701:mcs17:fbk</pv_name>
+    <x>258</x>
+    <y>186</y>
+    <width>204</width>
+    <height>53</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="25.742574257425744">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V2</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs17:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <x>256</x>
+    <y>129</y>
+    <width>219</width>
+    <height>58</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="48.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>V</text>
+    <x>412</x>
+    <y>157</y>
+    <width>30</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>IO0_2</name>
+    <pv_name>MCS1607-701:mcs18:fbk</pv_name>
+    <x>259</x>
+    <y>306</y>
+    <width>201</width>
+    <height>55</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="25.742574257425744">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V3</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs18:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <x>256</x>
+    <y>246</y>
+    <width>219</width>
+    <height>61</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="48.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>V</text>
+    <x>412</x>
+    <y>274</y>
+    <width>29</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 1</name>
+    <pv_name>A1607-701:sens_num</pv_name>
+    <x>410</x>
+    <y>1</y>
+    <width>62</width>
+    <height>33</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 2</name>
+    <pv_name>A1607-702:sens_num</pv_name>
+    <x>413</x>
+    <y>129</y>
+    <width>55</width>
+    <height>30</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 3</name>
+    <pv_name>A1607-703:sens_num</pv_name>
+    <x>413</x>
+    <y>246</y>
+    <width>55</width>
+    <height>33</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>cts</text>
+    <x>467</x>
+    <y>215</y>
+    <width>16</width>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>cts</text>
+    <x>467</x>
+    <y>334</y>
+    <width>16</width>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units 1</name>
+    <pv_name>A1607-701:sens_unit</pv_name>
+    <x>470</x>
+    <y>5</y>
+    <width>35</width>
+    <height>26</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units_2</name>
+    <pv_name>A1607-702:sens_unit</pv_name>
+    <x>470</x>
+    <y>134</y>
+    <width>35</width>
+    <height>19</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units_3</name>
+    <pv_name>A1607-703:sens_unit</pv_name>
+    <x>466</x>
+    <y>253</y>
+    <width>44</width>
+    <height>19</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <x>256</x>
+    <y>365</y>
+    <width>320</width>
+    <height>115</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>IO0_3</name>
+    <pv_name>MCS1607-701:mcs19:fbk</pv_name>
+    <x>259</x>
+    <y>426</y>
+    <width>201</width>
+    <height>55</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="25.742574257425744">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>V4</name>
+    <pv_name>=1E-5*'MCS1607-701:mcs19:fbk' /('MCS1607-701:mcs:delay'/1000)</pv_name>
+    <x>256</x>
+    <y>366</y>
+    <width>219</width>
+    <height>61</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="48.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <tooltip>ampliffier voltage</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>cts</text>
+    <x>467</x>
+    <y>454</y>
+    <width>16</width>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Units_4</name>
+    <pv_name>A1607-704:sens_unit</pv_name>
+    <x>466</x>
+    <y>373</y>
+    <width>44</width>
+    <height>19</height>
+    <font>
+      <font family="Arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_16</name>
+    <text>ms</text>
+    <x>166</x>
+    <y>430</y>
+    <width>32</width>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_17</name>
+    <text>Dwell Time</text>
+    <x>130</x>
+    <y>413</y>
+    <width>69</width>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Gain Value 3_1</name>
+    <pv_name>A1607-704:sens_num</pv_name>
+    <x>413</x>
+    <y>366</y>
+    <width>55</width>
+    <height>33</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_18</name>
+    <text>Scale
+MAX</text>
+    <x>450</x>
+    <y>34</y>
+    <width>38</width>
+    <height>36</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_22</name>
+    <text>Scale
+MAX</text>
+    <x>450</x>
+    <y>154</y>
+    <width>38</width>
+    <height>36</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_23</name>
+    <text>Scale
+MAX</text>
+    <x>450</x>
+    <y>275</y>
+    <width>38</width>
+    <height>36</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_24</name>
+    <text>Scale
+MAX</text>
+    <x>450</x>
+    <y>395</y>
+    <width>38</width>
+    <height>36</height>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>V1_1</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <text>9.1E10 ph/s</text>
+    <x>80</x>
+    <y>12</y>
+    <width>169</width>
+    <height>42</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <scripts>
+      <script file="EmbeddedPy" check_connections="false">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+from org.csstudio.display.builder.runtime.script import ScriptUtil
+
+def getGainOrder(unitStr):
+	if unitStr == "m":
+		gainOrder = 1e-3
+	elif unitStr == "u":
+		gainOrder = 1e-6
+	elif unitStr == "n":
+		gainOrder = 1e-9
+	elif unitStr == "p":
+		gainOrder = 1e-12
+	else:
+		gainOrder = 0
+	return gainOrder
+
+energy = 1
+energy = float(ScriptUtil.findWidgetByName(widget, "Main Energy").getPropertyValue("pv_value").value)
+voltage = float(ScriptUtil.findWidgetByName(widget, "V1").getPropertyValue("pv_value").value)
+gainNum = float(ScriptUtil.findWidgetByName(widget, "Gain Value 1").getPropertyValue("pv_value").value)
+gainOrderStr = (ScriptUtil.findWidgetByName(widget, "Gain Units 1").getPropertyValue("pv_value").value)[0]
+offsetNum = float(ScriptUtil.findWidgetByName(widget, "Offset Num IC1").getPropertyValue("pv_value").value)
+offsetUnitStr = (ScriptUtil.findWidgetByName(widget, "Offset Unit IC1").getPropertyValue("pv_value").value)[0]
+
+offsetGain = float(offsetNum) * getGainOrder(offsetUnitStr)
+dwellTime = float(ScriptUtil.findWidgetByName(widget, "Dwell_time").getPropertyValue("pv_value").value) * 0.001
+
+pC = [-7.42691780e+02, 3.88267580e-12, -4.54111903e-03, 6.60645566e+10]
+
+gain = float(gainNum) * getGainOrder(gainOrderStr)
+eFrac = energy * (pC[1]*(energy-pC[0])**2 + pC[3]*(energy-pC[0])**(-3) + pC[2])
+flux = 0
+current = voltage*gain - offsetGain
+if eFrac > 0 and current  > 0 and voltage>0.015:
+	flux = current * 36 / (1.6e-19 * eFrac)
+widget.setPropertyValue("text", "{:.1e} ph/s".format(flux))]]></text>
+        <pv_name>MCS1607-701:mcs16:fbk</pv_name>
+      </script>
+    </scripts>
+    <tooltip>Flux in I0</tooltip>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Main Energy</name>
+    <pv_name>BL1607-I21:Mono:Energy:EV:fbk</pv_name>
+    <x>115</x>
+    <y>63</y>
+    <width>134</width>
+    <height>42</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Num IC1</name>
+    <pv_name>A1607-701:offset_num</pv_name>
+    <x>574</x>
+    <y>122</y>
+    <width>37</width>
+    <height>43</height>
+    <visible>false</visible>
+    <font>
+      <font family="DejaVu Math TeX Gyre" style="BOLD" size="19.801980198019802">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Offset Unit IC1</name>
+    <pv_name>A1607-701:offset_unit</pv_name>
+    <x>495</x>
+    <y>95</y>
+    <visible>false</visible>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_25</name>
+    <text>Range</text>
+    <x>510</x>
+    <y>44</y>
+    <width>70</width>
+    <height>32</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="REGULAR" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-702:gainIncrease</pv_name>
+    <text>+</text>
+    <x>515</x>
+    <y>128</y>
+    <width>60</width>
+    <height>36</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-702:gainDecrease</pv_name>
+    <text>-</text>
+    <x>515</x>
+    <y>203</y>
+    <width>60</width>
+    <height>36</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_26</name>
+    <text>Range</text>
+    <x>510</x>
+    <y>166</y>
+    <width>70</width>
+    <height>32</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="REGULAR" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_4</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-703:gainIncrease</pv_name>
+    <text>+</text>
+    <x>515</x>
+    <y>247</y>
+    <width>60</width>
+    <height>36</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_5</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-703:gainDecrease</pv_name>
+    <text>-</text>
+    <x>515</x>
+    <y>321</y>
+    <width>60</width>
+    <height>36</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_27</name>
+    <text>Range</text>
+    <x>510</x>
+    <y>285</y>
+    <width>70</width>
+    <height>32</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="REGULAR" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_6</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-704:gainIncrease</pv_name>
+    <text>+</text>
+    <x>515</x>
+    <y>367</y>
+    <width>60</width>
+    <height>36</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_7</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-704:gainDecrease</pv_name>
+    <text>-</text>
+    <x>515</x>
+    <y>441</y>
+    <width>60</width>
+    <height>36</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_28</name>
+    <text>Range</text>
+    <x>510</x>
+    <y>407</y>
+    <width>70</width>
+    <height>32</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="REGULAR" size="13.861386138613861">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_29</name>
+    <text>Flux</text>
+    <x>6</x>
+    <y>13</y>
+    <width>68</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_30</name>
+    <text>Energy</text>
+    <x>5</x>
+    <y>64</y>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-701:gainIncrease</pv_name>
+    <text>+</text>
+    <x>515</x>
+    <y>6</y>
+    <width>60</width>
+    <height>40</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>A1607-701:gainDecrease</pv_name>
+    <text>-</text>
+    <x>515</x>
+    <y>77</y>
+    <width>60</width>
+    <height>40</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="21.782178217821784">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_1</name>
+    <pv_name>SV1607-7-I21-12:control</pv_name>
+    <bit>-1</bit>
+    <x>131</x>
+    <y>351</y>
+    <width>115</width>
+    <height>50</height>
+    <off_label>MOVE IN</off_label>
+    <off_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </off_color>
+    <on_label>MOVE OUT</on_label>
+    <on_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font family="Liberation Sans Narrow" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+      <action type="write_pv">
+        <pv_name>SV1607-7-I21-12:OprInsert</pv_name>
+        <value>1</value>
+      </action>
+      <action type="write_pv">
+        <pv_name>SV1607-7-I21-12:OprExtract</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Are you sure you want to do this?</confirm_message>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_32</name>
+    <text>BPM Upstream</text>
+    <x>131</x>
+    <y>316</y>
+    <width>115</width>
+    <height>36</height>
+    <font>
+      <font family="Liberation Sans Narrow" style="BOLD" size="11.881188118811881">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="144" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_33</name>
+    <text>V</text>
+    <x>412</x>
+    <y>393</y>
+    <width>29</width>
+    <height>30</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="27.722772277227723">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_10</name>
+    <actions>
+      <action type="execute">
+        <script file="EmbeddedPy">
+          <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+import time
+PVUtil.writePV('TRG1607-701:SYS_RESET.PROC', 1)
+dwellTime = float(display.getWidget("Dwell_time").getPropertyValue("text")) * 0.001
+PVUtil.writePV('TRG1607-701:PULSE1_PRE', "s")
+PVUtil.writePV('TRG1607-701:PULSE1_WID', dwellTime)
+PVUtil.writePV('TRG1607-701:PULSE3_WID', dwellTime)
+time.sleep(1.)
+PVUtil.writePV('TRG1607-701:SOFT_IN:B0', 1)]]></text>
+        </script>
+      </action>
+    </actions>
+    <pv_name>TRG1607-701:SOFT_IN:B0</pv_name>
+    <text>Kick Zebra</text>
+    <x>487</x>
+    <y>44</y>
+    <width>115</width>
+    <height>46</height>
+    <visible>false</visible>
+    <font>
+      <font family="Noto Sans" style="BOLD" size="11.881188118811881">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <enabled>false</enabled>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>TRG1607-701:SYS_STATERR.B0</pv_name>
+    <x>216</x>
+    <y>411</y>
+    <width>33</width>
+    <height>33</height>
+    <off_color>
+      <color red="0" green="100" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <scripts>
+      <script file="EmbeddedPy">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+import time
+if PVUtil.getLong(pvs[0])>0:
+	PVUtil.writePV('TRG1607-701:SYS_RESET.PROC', 1)
+	dwellTime = float(display.getWidget("Dwell_time").getPropertyValue("text")) * 0.001
+	PVUtil.writePV('TRG1607-701:PULSE1_PRE', "s")
+	PVUtil.writePV('TRG1607-701:PULSE1_WID', dwellTime)
+	PVUtil.writePV('TRG1607-701:PULSE3_WID', dwellTime)
+	time.sleep(1.)
+	PVUtil.writePV('TRG1607-701:SOFT_IN:B0', 1)]]></text>
+        <pv_name>TRG1607-701:SYS_STATERR</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Main Energy_1</name>
+    <pv_name>BL1607-I21:M1:Pitch:deg:fbk</pv_name>
+    <x>147</x>
+    <y>113</y>
+    <width>98</width>
+    <height>42</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>3</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_34</name>
+    <text>M1 Pitch</text>
+    <x>5</x>
+    <y>114</y>
+    <width>128</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Main Energy_2</name>
+    <pv_name>BL1607-I21:DBHR:Pitch:deg:fbk</pv_name>
+    <x>147</x>
+    <y>162</y>
+    <width>98</width>
+    <height>42</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>3</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_35</name>
+    <text>DBHR Pitch</text>
+    <x>11</x>
+    <y>163</y>
+    <width>128</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>cryo_z</name>
+    <pv_name>BL1607-I21:Cryo:Z:mm:fbk</pv_name>
+    <x>95</x>
+    <y>213</y>
+    <width>64</width>
+    <height>44</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="26" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_38</name>
+    <text>Stage</text>
+    <x>11</x>
+    <y>215</y>
+    <width>63</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Main Energy_4</name>
+    <pv_name>BL1607-I21:Cryo:Y:mm:fbk</pv_name>
+    <x>180</x>
+    <y>213</y>
+    <width>69</width>
+    <height>44</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="53">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_39</name>
+    <text>Y</text>
+    <x>161</x>
+    <y>215</y>
+    <width>20</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_40</name>
+    <text>Z</text>
+    <x>73</x>
+    <y>215</y>
+    <width>28</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>cryo_z_1</name>
+    <pv_name>SMTR1607-7-I21-28:mm:sp</pv_name>
+    <x>125</x>
+    <y>241</y>
+    <width>64</width>
+    <height>44</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="201" green="26" blue="228">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_41</name>
+    <text>Cryo rod</text>
+    <x>11</x>
+    <y>243</y>
+    <width>104</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>cryo_z_2</name>
+    <pv_name>SMTR1607-7-I21-19:deg:sp</pv_name>
+    <x>150</x>
+    <y>271</y>
+    <width>64</width>
+    <height>44</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Normal Level Alarm" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_45</name>
+    <text>Sample whl</text>
+    <x>11</x>
+    <y>273</y>
+    <width>136</width>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="15.841584158415841">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="232" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>grp_m2_paddle</name>
+    <macros>
+      <pv_root>BL1607-I21:M2:Slit</pv_root>
+    </macros>
+    <y>312</y>
+    <width>127</width>
+    <height>91</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_vslit_in</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>0</value>
+        </action>
+      </actions>
+      <pv_name>$(pv_root):mm</pv_name>
+      <text>IN</text>
+      <y>54</y>
+      <width>61</width>
+      <background_color>
+        <color red="138" green="226" blue="52">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="disable when already in" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0&gt;1">
+            <value>true</value>
+          </exp>
+          <exp bool_exp="pv0&lt;1">
+            <value>false</value>
+          </exp>
+          <pv_name>${pv_root}:mm:fbk</pv_name>
+        </rule>
+      </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <text>BPM M2 Paddle</text>
+      <width>121</width>
+      <height>31</height>
+      <font>
+        <font family="Liberation Sans Narrow" style="BOLD" size="11.881188118811881">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="255" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="0" green="144" blue="255">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_vslit_in</name>
+      <pv_name>=('${pv_root}:mm:fbk'&lt;10)</pv_name>
+      <x>3</x>
+      <y>32</y>
+      <width>116</width>
+      <off_label>OUT</off_label>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_label>IN</on_label>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_vslit_out</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>40</value>
+        </action>
+      </actions>
+      <pv_name>$(pv_root):mm</pv_name>
+      <text>Out</text>
+      <x>60</x>
+      <y>54</y>
+      <width>61</width>
+      <background_color>
+        <color red="239" green="41" blue="41">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>txt_m2_vslit_pos</name>
+      <pv_name>$(pv_root):mm:fbk</pv_name>
+      <x>84</x>
+      <y>32</y>
+      <width>24</width>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+</display>

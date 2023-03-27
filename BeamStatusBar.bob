@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>BioXAS Main Status Bar</name>
+  <width>260</width>
+  <height>680</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="led" version="2.0.0">
+    <name>Ring State</name>
+    <pv_name>=('PCT1402-01:mA:fbk' &gt; 140)</pv_name>
+    <x>20</x>
+    <y>20</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>BEAM OFF</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>BEAM ON</on_label>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Ring Status</text>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Wiggler Status</text>
+    <x>140</x>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State</name>
+    <pv_name>=('WIG1407-01:gap:mm:fbk' &lt; 12)</pv_name>
+    <x>160</x>
+    <y>20</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OK</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_1</name>
+    <pv_name>=(('SMTR1607-5-I21-09:mm:fbk' - 'SMTR1607-5-I21-10:mm:fbk') &gt; 0.1)</pv_name>
+    <x>160</x>
+    <y>250</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>CLOSED</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OPEN</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_2</name>
+    <pv_name>SSH1407-I00-01:state</pv_name>
+    <bit>0</bit>
+    <x>160</x>
+    <y>135</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>CLOSED</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OPEN</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_3</name>
+    <pv_name>IPSH1407-I00-02:state</pv_name>
+    <bit>0</bit>
+    <x>20</x>
+    <y>135</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>CLOSED</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OPEN</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_4</name>
+    <pv_name>=('SMTR1607-5-I21-08:mm:fbk' &gt; 0.1)</pv_name>
+    <x>20</x>
+    <y>250</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>CLOSED</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OPEN</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>FE Safety Shutter</text>
+    <x>140</x>
+    <y>115</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>FE Shutter</text>
+    <y>115</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>M1 Blade Mask</text>
+    <y>230</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Mono Mask</text>
+    <x>140</x>
+    <y>230</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>M2 Paddle</text>
+    <y>345</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_5</name>
+    <pv_name>=('SMTR1607-5-I21-28:mm:sp' &gt; 15)</pv_name>
+    <x>20</x>
+    <y>365</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>IN</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OUT</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_6</name>
+    <pv_name>SSH1607-5-I21-01:state</pv_name>
+    <bit>0</bit>
+    <x>20</x>
+    <y>480</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>CLOSED</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OPEN</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>POE Shutter</text>
+    <y>460</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>IC HV</text>
+    <y>575</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_8</name>
+    <pv_name>SWES1607-7-01:Em:Off</pv_name>
+    <x>160</x>
+    <y>480</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>ON</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>OFF</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>Motor Interlocks</text>
+    <x>140</x>
+    <y>460</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Wiggler State_9</name>
+    <pv_name>PLC2406-7-03:BL:ready:in</pv_name>
+    <x>160</x>
+    <y>365</y>
+    <width>80</width>
+    <height>80</height>
+    <off_label>BAD</off_label>
+    <off_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>GOOD</on_label>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>Valves Status</text>
+    <x>140</x>
+    <y>345</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)</name>
+    <pv_name>=('PS1607-701:A:voltage' &gt; 1800)*('PS1607-701:B:voltage' &gt; 1800)*('PS1607-702:A:voltage' &gt; 1800)*2+('PS1607-701:A:voltage' &gt; 1000)*('PS1607-701:B:voltage' &gt; 1000)*('PS1607-702:A:voltage' &gt; 1000)</pv_name>
+    <x>20</x>
+    <y>595</y>
+    <width>80</width>
+    <height>80</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <states>
+      <state>
+        <value>0</value>
+        <label>OFF</label>
+        <color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>Argon</label>
+        <color>
+          <color red="204" green="255" blue="255">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>3</value>
+        <label>Nitrogen</label>
+        <color>
+          <color name="OK" red="0" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)_1</name>
+    <pv_name>='PFIL1607-7-I21-01:control'*250+'PFIL1607-7-I21-02:control'*500+'PFIL1607-7-I21-03:control'*1000+'PFIL1607-7-I21-04:control'*10000</pv_name>
+    <x>160</x>
+    <y>595</y>
+    <width>80</width>
+    <height>80</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <states>
+      <state>
+        <value>0</value>
+        <label>OUT</label>
+        <color>
+          <color name="OK" red="0" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>250</value>
+        <label>250um</label>
+        <color>
+          <color name="ActiveText" red="255" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>500</value>
+        <label>500um</label>
+        <color>
+          <color name="ActiveText" red="255" green="255" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>750</value>
+        <label>750um</label>
+        <color>
+          <color name="Attention" red="255" green="160" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1000</value>
+        <label>1000um</label>
+        <color>
+          <color name="Attention" red="255" green="160" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1250</value>
+        <label>1250um</label>
+        <color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1500</value>
+        <label>1500um</label>
+        <color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1750</value>
+        <label>1750um</label>
+        <color>
+          <color name="MAJOR" red="255" green="0" blue="0">
+          </color>
+        </color>
+      </state>
+    </states>
+    <fallback_label>10mm</fallback_label>
+    <fallback_color>
+      <color name="MAJOR" red="255" green="0" blue="0">
+      </color>
+    </fallback_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>XIA Filters</text>
+    <x>140</x>
+    <y>575</y>
+    <width>120</width>
+    <height>16</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

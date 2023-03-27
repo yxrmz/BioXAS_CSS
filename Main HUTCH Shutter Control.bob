@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>BioXAS Main Beamshutter</name>
+  <width>260</width>
+  <height>120</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="bool_button" version="2.0.0">
+    <name>cmdOpen</name>
+    <pv_name>SSH1607-5-I21-01:opr:open</pv_name>
+    <bit>-1</bit>
+    <x>20</x>
+    <y>20</y>
+    <width>110</width>
+    <off_label>Open</off_label>
+    <off_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </off_color>
+    <on_label>Opening...</on_label>
+    <on_color>
+      <color red="0" green="204" blue="0">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="0" green="255" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>open shutter</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Status</name>
+    <pv_name>SSH1607-5-I21-01:state</pv_name>
+    <x>20</x>
+    <y>55</y>
+    <width>220</width>
+    <height>60</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="32.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="change color with status" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>
+            <color red="0" green="255" blue="0">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pv0==2">
+          <value>
+            <color name="Major" red="255" green="0" blue="0">
+            </color>
+          </value>
+        </exp>
+        <pv_name>SSH1607-5-I21-01:state</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>cmdClose</name>
+    <pv_name>SSH1607-5-I21-01:opr:close</pv_name>
+    <bit>-1</bit>
+    <x>130</x>
+    <y>20</y>
+    <width>110</width>
+    <off_label>Close</off_label>
+    <off_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label>Closing...</on_label>
+    <on_color>
+      <color red="204" green="0" blue="0">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Major" red="255" green="0" blue="0">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>close shutter</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>current status:</text>
+    <x>60</x>
+    <y>55</y>
+    <width>140</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Bioxas-Main SOE-2 Beamshutter</text>
+    <width>260</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

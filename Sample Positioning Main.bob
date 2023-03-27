@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Sample Positioning</name>
+  <width>360</width>
+  <height>500</height>
+  <background_color>
+    <color name="Read_Background" red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Cryostat rod</name>
+        <children>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_6</name>
+            <x>168</x>
+            <y>19</y>
+            <width>50</width>
+            <height>30</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <border_width>1</border_width>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Entry_6</name>
+            <x>118</x>
+            <y>19</y>
+            <width>50</width>
+            <height>30</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_8</name>
+            <text>Vertical</text>
+            <x>18</x>
+            <y>19</y>
+            <width>90</width>
+            <height>30</height>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="progressbar" version="2.0.0">
+            <name>Progress Bar</name>
+            <x>18</x>
+            <y>59</y>
+            <width>250</width>
+            <maximum>35.0</maximum>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Sample wheel</name>
+        <children>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Entry_4</name>
+            <x>118</x>
+            <y>19</y>
+            <width>70</width>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_4</name>
+            <x>198</x>
+            <y>19</y>
+            <width>70</width>
+            <height>30</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <border_width>1</border_width>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_6</name>
+            <text>Goniometer</text>
+            <x>18</x>
+            <y>19</y>
+            <width>90</width>
+            <height>30</height>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_5</name>
+            <x>198</x>
+            <y>52</y>
+            <width>70</width>
+            <height>30</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <border_width>1</border_width>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Entry_5</name>
+            <x>118</x>
+            <y>52</y>
+            <width>70</width>
+            <height>30</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_7</name>
+            <text>Wheel</text>
+            <x>18</x>
+            <y>52</y>
+            <width>90</width>
+            <height>30</height>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>10</x>
+    <y>260</y>
+    <width>340</width>
+    <height>130</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <active_tab>1</active_tab>
+    <tab_height>25</tab_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>JJ slits</name>
+    <y>150</y>
+    <width>360</width>
+    <height>110</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <x>102</x>
+      <y>2</y>
+      <width>50</width>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <x>152</x>
+      <y>2</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <x>152</x>
+      <y>42</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <x>102</x>
+      <y>42</y>
+      <width>50</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Horizontal</text>
+      <x>2</x>
+      <y>2</y>
+      <width>90</width>
+      <height>30</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Vertical</text>
+      <x>2</x>
+      <y>42</y>
+      <width>90</width>
+      <height>30</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <x>272</x>
+      <y>42</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_7</name>
+      <x>222</x>
+      <y>42</y>
+      <width>50</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_8</name>
+      <x>222</x>
+      <y>2</y>
+      <width>50</width>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <x>272</x>
+      <y>2</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Cryostat stage</name>
+    <y>390</y>
+    <width>360</width>
+    <height>110</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Read_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Horizontal</text>
+      <x>2</x>
+      <y>12</y>
+      <width>70</width>
+      <height>30</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Vertical</text>
+      <x>2</x>
+      <y>42</y>
+      <width>70</width>
+      <height>30</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <x>102</x>
+      <y>42</y>
+      <width>50</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <x>102</x>
+      <y>12</y>
+      <width>50</width>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <x>152</x>
+      <y>12</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <x>152</x>
+      <y>42</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_1</name>
+    <pv_name>SV1607-7-I21-12:control</pv_name>
+    <bit>-1</bit>
+    <x>140</x>
+    <y>115</y>
+    <width>115</width>
+    <off_label>MOVE IN</off_label>
+    <off_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </off_color>
+    <on_label>MOVE OUT</on_label>
+    <on_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+      <action type="write_pv">
+        <pv_name>SV1607-7-I21-12:OprInsert</pv_name>
+        <value>1</value>
+      </action>
+      <action type="write_pv">
+        <pv_name>SV1607-7-I21-12:OprExtract</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Are you sure you want to do this?</confirm_message>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_32</name>
+    <text>Upstream BPM</text>
+    <x>140</x>
+    <y>100</y>
+    <width>115</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="144" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_2</name>
+    <pv_name>='BL1607-I21:M2:Slit:mm:fbk'/40</pv_name>
+    <bit>-1</bit>
+    <x>10</x>
+    <y>115</y>
+    <width>115</width>
+    <off_label>MOVE IN</off_label>
+    <off_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </off_color>
+    <on_label>MOVE OUT</on_label>
+    <on_color>
+      <color red="192" green="192" blue="192">
+      </color>
+    </on_color>
+    <show_led>false</show_led>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+      <action type="write_pv">
+        <pv_name>BL1607-I21:M2:Slit</pv_name>
+        <value>0</value>
+      </action>
+      <action type="write_pv">
+        <pv_name>BL1607-I21:M2:Slit</pv_name>
+        <value>40</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <confirm_message>Are you sure you want to do this?</confirm_message>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_33</name>
+    <text>M2 paddle BPM</text>
+    <x>10</x>
+    <y>100</y>
+    <width>115</width>
+    <height>16</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="144" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>350</width>
+    <height>90</height>
+    <line_color>
+      <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_34</name>
+    <text>Energy</text>
+    <x>10</x>
+    <height>40</height>
+    <font>
+      <font family="DejaVu Sans Mono" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Main Energy</name>
+    <pv_name>BL1607-I21:Mono:Energy:EV:fbk</pv_name>
+    <x>140</x>
+    <y>1</y>
+    <width>115</width>
+    <height>42</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="20.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <format>1</format>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Dwell_time</name>
+    <pv_name>MCS1607-701:mcs:delay</pv_name>
+    <x>140</x>
+    <y>43</y>
+    <width>115</width>
+    <height>42</height>
+    <font>
+      <font family="DSEG7 Classic" style="BOLD" size="20.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_35</name>
+    <text>Dwell time</text>
+    <x>20</x>
+    <y>41</y>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

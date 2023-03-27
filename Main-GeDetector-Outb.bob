@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Ge32_outboard</name>
+  <width>340</width>
+  <height>170</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="group" version="2.0.0">
+    <name>Ge32_Outboard</name>
+    <macros>
+      <PV_root>SMTR1607-7-I21-17</PV_root>
+      <PV_root_sim>loc://sim1</PV_root_sim>
+      <detector_name>Outboard</detector_name>
+    </macros>
+    <x>6</x>
+    <y>6</y>
+    <width>325</width>
+    <height>126</height>
+    <style>2</style>
+    <foreground_color>
+      <color name="IO PV ON" red="0" green="0" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Detector Name</name>
+      <text>$(detector_name) Detector Stage</text>
+      <x>10</x>
+      <y>7</y>
+      <width>295</width>
+      <height>18</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="11.881188118811881">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>fbk label</name>
+      <text>fbk:</text>
+      <x>110</x>
+      <y>72</y>
+      <width>30</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>FBK txt indicator</name>
+      <pv_name>$(PV_root):mm:sp</pv_name>
+      <x>140</x>
+      <y>72</y>
+      <width>60</width>
+      <height>25</height>
+      <font>
+        <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>SP label</name>
+      <text>SP:</text>
+      <x>210</x>
+      <y>72</y>
+      <width>30</width>
+      <height>25</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="progressbar" version="2.0.0">
+      <name>fbk indicator bar</name>
+      <pv_name>$(PV_root):mm:sp</pv_name>
+      <x>9</x>
+      <y>100</y>
+      <width>297</width>
+      <fill_color>
+        <color name="GREEN-BORDER" red="40" green="140" blue="40">
+        </color>
+      </fill_color>
+      <background_color>
+        <color red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>250.0</maximum>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>grp_action_buttons</name>
+      <x>6</x>
+      <y>30</y>
+      <height>40</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>0</value>
+            <description>0</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>256</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>5</value>
+            <description>5</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>214</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>50</value>
+            <description>50</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>172</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>100</value>
+            <description>100</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>130</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>150</value>
+            <description>150</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>88</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>200</value>
+            <description>200</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>46</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>250</value>
+            <description>250</description>
+          </action>
+        </actions>
+        <pv_name>$(PV_root):mm</pv_name>
+        <x>4</x>
+        <width>40</width>
+        <height>40</height>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>btn_next_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Stop</description>
+        </action>
+      </actions>
+      <pv_name>$(PV_root):stop</pv_name>
+      <x>9</x>
+      <y>72</y>
+      <width>75</width>
+      <height>25</height>
+      <foreground_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="Major" red="250" green="12" blue="14">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Setpoint Input</name>
+      <pv_name>$(PV_root):mm</pv_name>
+      <x>240</x>
+      <y>72</y>
+      <width>60</width>
+      <height>25</height>
+      <font>
+        <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Header_ForeGround" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>1</format>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+</display>
